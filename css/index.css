@@ -393,22 +393,28 @@ html {
   transform: rotate(180deg);
 }
 #portfolio > .portfolio_showcase_div {
+  position: relative;
+  overflow: hidden;
+}
+#portfolio > .portfolio_showcase_div > div {
   display: flex;
   align-items: center;
-  width: 100%;
-  float: left;
-  overflow: hidden;
-  overflow-x: scroll;
   gap: 2rem;
+  width: -moz-max-content;
+  width: max-content;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  animation: marquee 20s linear 1s infinite;
 }
-#portfolio > .portfolio_showcase_div > img {
+#portfolio > .portfolio_showcase_div > div:hover {
+  animation-play-state: paused;
+}
+#portfolio > .portfolio_showcase_div > div > img {
   width: 100%;
   cursor: pointer;
 }
-#portfolio > .portfolio_showcase_div::-webkit-scrollbar {
+#portfolio > .portfolio_showcase_div > div::-webkit-scrollbar {
   display: none;
   scrollbar-width: thin;
 }
@@ -494,6 +500,7 @@ html {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   height: 100%;
+  width: 100%;
 }
 #modal > img {
   margin: 1rem 1.5rem;
@@ -556,11 +563,14 @@ html {
   }
 }
 @keyframes marquee {
-  from {
-    transform: translateX(100%);
+  0% {
+    transform: translateX(0%);
   }
-  to {
+  50% {
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 @media (max-width: 1478px) {
@@ -714,7 +724,7 @@ html {
   }
   .main_nav > .mobile_navigation_box > .nav_contact {
     margin-top: 2.5rem;
-    align-self: flex-end;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -878,5 +888,11 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+  }
+  #portfolio > .portfolio_showcase_div {
+    overflow-x: scroll;
+  }
+  #portfolio > .portfolio_showcase_div > div {
+    animation: none;
   }
 }/*# sourceMappingURL=index.css.map */

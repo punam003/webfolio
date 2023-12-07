@@ -388,24 +388,28 @@ html {
     }
   }
   & > .portfolio_showcase_div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    float: left;
+    position: relative;
     overflow: hidden;
-    overflow-x: scroll;
-    gap: 2rem;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    & > img {
-      width: 100%;
-      cursor: pointer;
-    }
-    &::-webkit-scrollbar {
-      display: none;
-      scrollbar-width: thin;
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: max-content;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      animation: marquee 20s linear 1s infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+      & > img {
+        width: 100%;
+        cursor: pointer;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+        scrollbar-width: thin;
+      }
     }
   }
 }
@@ -496,6 +500,7 @@ html {
   justify-content: center;
   backdrop-filter: blur(3px);
   height: 100%;
+  width: 100%;
   & > img {
     margin: 1rem 1.5rem;
     width: 55%;
@@ -557,11 +562,14 @@ html {
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(100%);
+  0% {
+    transform: translateX(0%);
   }
-  to {
+  50% {
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 @media (max-width: 1478px) {
@@ -743,7 +751,7 @@ html {
       }
       & > .nav_contact {
         margin-top: 2.5rem;
-        align-self: flex-end;
+        align-self: flex-start;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
@@ -926,6 +934,12 @@ html {
         justify-content: space-between;
         gap: 2rem;
       }
+    }
+  }
+  #portfolio > .portfolio_showcase_div {
+    overflow-x: scroll;
+    & > div {
+      animation: none;
     }
   }
 }

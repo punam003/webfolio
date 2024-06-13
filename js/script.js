@@ -79,6 +79,20 @@ for (let index = 0; index < showCaseContainer.children.length; index++) {
       modal.children[0].src = "./assets/food_main.png";
     } else if (index == 8) {
       modal.children[0].src = "./assets/Ai Magazine.png";
+    } else if (index == 9) {
+      modal.children[0].src = "./assets/Dribbble shot - 2.png";
+    } else if (index == 10) {
+      modal.children[0].src = "./assets/Dribbble shot - 3.png";
+    } else if (index == 11) {
+      modal.children[0].src = "./assets/Dribbble shot - 4.png";
+    } else if (index == 12) {
+      modal.children[0].src = "./assets/Dribbble shot - 5.png";
+    } else if (index == 13) {
+      modal.children[0].src = "./assets/Dribbble shot - 6.png";
+    } else if (index == 14) {
+      modal.children[0].src = "./assets/Dribbble shot - 7.png";
+    } else if (index == 15) {
+      modal.children[0].src = "./assets/Dribbble shot - 8.png";
     }
   });
 }

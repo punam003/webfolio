@@ -226,7 +226,7 @@ html {
 }
 #services > .services_card_div > .services_card_sub_div {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
   animation: marquee 10s linear 0s infinite;
 }
@@ -283,6 +283,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: flex-end;
 }
 #about > .about_text_div > .about_info > .about_text {
   display: flex;
@@ -630,6 +631,42 @@ html {
   .footer_last_div {
     width: 17rem !important;
   }
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about > .about_banner_box > p {
+    position: static !important;
+    width: 100% !important;
+    font-size: 1.2rem;
+  }
+  #about > .about_banner_box > img {
+    display: none;
+  }
+  #about > .about_text_div {
+    gap: 1rem;
+  }
+  #about > .about_text_div > .about_info {
+    align-items: center;
+  }
+  #about > .about_text_div > .about_info > .about_text {
+    gap: 0rem;
+  }
+  #about > .about_text_div > .about_info > .about_text > h1 {
+    text-align: center;
+    font-size: 5.2rem;
+    line-height: 5.8rem;
+    text-shadow: 2px 2px 4px #888888;
+  }
+  #about > .about_text_div > .about_info > .about_details {
+    transform: none;
+  }
+  #about > .about_text_div > .about_info > .about_details > div {
+    width: 20rem;
+  }
+  #about > .about_text_div > .about_info > .about_details > div > p:nth-child(2) {
+    transform: none;
+  }
 }
 @media (max-width: 970px) {
   .hero_img > img {
@@ -756,38 +793,6 @@ html {
   }
   #modal > img {
     width: 90%;
-  }
-  #about {
-    flex-direction: column;
-  }
-  #about > .about_banner_box > p {
-    position: static !important;
-    width: 100% !important;
-    font-size: 1.2rem;
-  }
-  #about > .about_banner_box > img {
-    display: none;
-  }
-  #about > .about_text_div {
-    gap: 1rem;
-  }
-  #about > .about_text_div > .about_info > .about_text {
-    gap: 0rem;
-  }
-  #about > .about_text_div > .about_info > .about_text > h1 {
-    text-align: center;
-    font-size: 5.2rem;
-    line-height: 5.8rem;
-    text-shadow: 2px 2px 4px #888888;
-  }
-  #about > .about_text_div > .about_info > .about_details {
-    transform: none;
-  }
-  #about > .about_text_div > .about_info > .about_details > div {
-    width: 20rem;
-  }
-  #about > .about_text_div > .about_info > .about_details > div > p:nth-child(2) {
-    transform: none;
   }
   #portfolio > .portfolio_text_div > h1 {
     font-size: 2.7rem;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -31,7 +32,8 @@ html {
   justify-content: center;
   text-decoration: none;
   font-size: 2rem;
-  font-weight: 900;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   text-transform: capitalize;
 }
 .main_nav > .logo_div > a > img {
@@ -406,7 +408,7 @@ html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  animation: marquee 20s linear 1s infinite;
+  animation: marquee 25s linear 1s infinite;
 }
 #portfolio > .portfolio_showcase_div > div:hover {
   animation-play-state: paused;
@@ -438,7 +440,8 @@ html {
   align-items: center;
   text-decoration: none;
   font-size: 2rem;
-  font-weight: 900;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   text-transform: capitalize;
 }
 #contact > .footer_first_div > .logo_div > a > img {
@@ -899,5 +902,13 @@ html {
   }
   #portfolio > .portfolio_showcase_div > div {
     animation: none;
+  }
+}
+@media (max-width: 425px) {
+  .portfolio_showcase_div > div {
+    align-items: stretch;
+  }
+  .portfolio_showcase_div > div > img {
+    max-width: 80vw;
   }
 }/*# sourceMappingURL=index.css.map */

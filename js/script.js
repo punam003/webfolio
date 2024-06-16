@@ -2,7 +2,7 @@
 
 let swipeTxtSpan = document.getElementById("swipe_txt");
 
-let txtMsg = ["Graphics", "UI/UX", "Poster", "Web"];
+let txtMsg = ["Graphics", "UI/UX"];
 let txtMsgIndex = 0;
 setInterval(() => {
   swipeTxtSpan.innerHTML =
@@ -62,37 +62,37 @@ for (let index = 0; index < showCaseContainer.children.length; index++) {
     modal.style.display = "flex";
     console.log(index);
     if (index == 0) {
-      modal.children[0].src = "./assets/MacBook Pro 16_ - 3.png";
-    } else if (index == 1) {
-      modal.children[0].src = "./assets/MacBook Pro 16_ - 1.png";
-    } else if (index == 2) {
-      modal.children[0].src = "./assets/MacBook Pro 16_ - 2.png";
-    } else if (index == 3) {
-      modal.children[0].src = "./assets/NIKE WEBPAGE.png";
-    } else if (index == 4) {
-      modal.children[0].src = "./assets/Home Page.png";
-    } else if (index == 5) {
-      modal.children[0].src = "./assets/Game Controler Poster.png";
-    } else if (index == 6) {
-      modal.children[0].src = "./assets/Dashboard.png";
-    } else if (index == 7) {
-      modal.children[0].src = "./assets/food_main.png";
-    } else if (index == 8) {
-      modal.children[0].src = "./assets/Ai Magazine.png";
-    } else if (index == 9) {
       modal.children[0].src = "./assets/Dribbble shot - 2.png";
-    } else if (index == 10) {
+    } else if (index == 1) {
       modal.children[0].src = "./assets/Dribbble shot - 3.png";
-    } else if (index == 11) {
+    } else if (index == 2) {
       modal.children[0].src = "./assets/Dribbble shot - 4.png";
-    } else if (index == 12) {
+    } else if (index == 3) {
       modal.children[0].src = "./assets/Dribbble shot - 5.png";
-    } else if (index == 13) {
+    } else if (index == 4) {
       modal.children[0].src = "./assets/Dribbble shot - 6.png";
-    } else if (index == 14) {
+    } else if (index == 5) {
       modal.children[0].src = "./assets/Dribbble shot - 7.png";
-    } else if (index == 15) {
+    } else if (index == 6) {
       modal.children[0].src = "./assets/Dribbble shot - 8.png";
+    } else if (index == 7) {
+      modal.children[0].src = "./assets/MacBook Pro 16_ - 3.png";
+    } else if (index == 8) {
+      modal.children[0].src = "./assets/MacBook Pro 16_ - 1.png";
+    } else if (index == 9) {
+      modal.children[0].src = "./assets/MacBook Pro 16_ - 2.png";
+    } else if (index == 10) {
+      modal.children[0].src = "./assets/NIKE WEBPAGE.png";
+    } else if (index == 11) {
+      modal.children[0].src = "./assets/Home Page.png";
+    } else if (index == 12) {
+      modal.children[0].src = "./assets/Game Controler Poster.png";
+    } else if (index == 13) {
+      modal.children[0].src = "./assets/Dashboard.png";
+    } else if (index == 14) {
+      modal.children[0].src = "./assets/food_main.png";
+    } else if (index == 15) {
+      modal.children[0].src = "./assets/Ai Magazine.png";
     }
   });
 }

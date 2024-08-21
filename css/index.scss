@@ -401,7 +401,7 @@ html {
       scroll-behavior: smooth;
       -ms-overflow-style: none;
       scrollbar-width: none;
-      animation: marquee 25s linear 1s infinite;
+      animation: marquee 50s linear 1s infinite;
       &:hover {
         animation-play-state: paused;
       }
